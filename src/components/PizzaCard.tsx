@@ -14,12 +14,12 @@ const PizzaCard: React.FC<PizzaCardProps> = ({ pizza, onSelect }) => {
       {/* Image Container */}
       <div className="aspect-square overflow-hidden">
         <img
-          src={`${pizza.image}?q=80&w=720`}
+          src={`${pizza.image}?q=80&w=300`}
           alt={pizza.name}
           className="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
           loading="lazy"
-          width="720"
-          height="720"
+          width="300"
+          height="300"
         />
       </div>
 

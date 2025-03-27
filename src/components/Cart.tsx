@@ -82,8 +82,8 @@ const Cart = () => {
                           <div className="flex items-center">
                             <div className="w-16 h-16 rounded-lg overflow-hidden mr-3">
                               <img
-                                src={item.flavors[0]?.image || "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=300"}
-                                alt={item.flavors[0]?.name || "Pizza"}
+                                src={(item.flavors[0] && item.flavors[0].image) || "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=300"}
+                                alt={(item.flavors[0] && item.flavors[0].name) || "Pizza"}
                                 className="w-full h-full object-cover"
                               />
                             </div>
